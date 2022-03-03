@@ -1,0 +1,18 @@
+.btn {
+  width: 12rem;
+  border: none;
+  padding: 1rem 2rem;
+  font-weight: 800;
+  font-size: 1.2rem;
+  color: white;
+  background: linear-gradient(270deg, #f06449, #ef3636);
+
+  transition: all 0.25s ease-out;
+  outline: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+
+  box-shadow: inset 13rem 0 0 0 #235aa6;
+}

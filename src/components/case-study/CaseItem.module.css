@@ -1,0 +1,45 @@
+.caseItem {
+  width: 100%;
+  background-color: #80171f;
+  height: 60vh;
+  color: white;
+  display: flex;
+}
+
+.leftContainer {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  padding: 2rem;
+  gap: 15rem;
+}
+
+.leftContainer .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.name {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.rightContainer {
+  width: 70%;
+  height: 100%;
+  background-color: #afb1c2;
+}
+
+.rightContainer img {
+  margin-top: 7rem;
+  width: 100%;
+
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+
+  /* Safari seems to support, but seems deprecated and does the same thing as the others. */
+  image-rendering: -webkit-optimize-contrast;
+}

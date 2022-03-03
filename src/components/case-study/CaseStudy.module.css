@@ -1,0 +1,35 @@
+.caseStudyWrapper {
+  background-color: #f2f2f2f7;
+  color: #4a4a4a;
+}
+
+.caseStudyText {
+  text-align: center;
+  font-size: 5rem;
+  position: relative;
+  padding-top: 8rem;
+
+  transition: all 0.2s;
+}
+
+.caseStudyText:hover {
+  font-size: 5.2rem;
+}
+
+.caseStudyText::after {
+  position: absolute;
+  display: block;
+  bottom: -10%;
+  left: 45%;
+  width: 10%;
+  border-bottom: 5px solid #f25757;
+  content: '';
+}
+
+.caseStudyList {
+  margin-top: 6rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10rem;
+}

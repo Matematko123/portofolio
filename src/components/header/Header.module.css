@@ -1,0 +1,63 @@
+.headerContainer {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 6.5rem;
+  font-size: 1.2rem;
+  color: #afb1c2;
+}
+
+.logo img {
+  width: 7rem;
+  image-rendering: auto;
+  image-rendering: crisp-edges;
+  transition: all 0.25s ease-out;
+}
+
+.logo img:hover {
+  cursor: pointer;
+  filter: brightness(85%);
+}
+
+.links {
+  display: flex;
+  gap: 2.2rem;
+  font-weight: bold;
+}
+
+.link {
+  display: inline-block;
+  position: relative;
+  transition: all 0.25s ease-out;
+}
+
+.link:hover {
+  color: white;
+}
+
+.link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: -4px;
+  left: 0;
+  background-color: #235aa6;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.link:hover:after {
+  transform: scaleX(1);
+  background-color: #f25757;
+
+  transform-origin: bottom left;
+}
