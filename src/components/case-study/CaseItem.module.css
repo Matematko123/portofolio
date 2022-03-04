@@ -1,9 +1,15 @@
 .caseItem {
   width: 100%;
-  background-color: #80171f;
   height: 60vh;
   color: white;
   display: flex;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+  transition: all 0.25s ease-out;
+}
+
+.caseItem:hover {
+  box-shadow: rgba(0, 0, 0, 0.26) 0px 3px 6px, rgba(0, 0, 0, 0.43) 0px 3px 6px;
 }
 
 .leftContainer {
@@ -12,7 +18,7 @@
   flex-direction: column;
   width: 30%;
   padding: 2rem;
-  gap: 15rem;
+  gap: 14rem;
 }
 
 .leftContainer .bottom {
@@ -21,19 +27,29 @@
   gap: 2rem;
 }
 
-.name {
-  font-size: 3rem;
+.caseStudyText {
+  font-size: 1rem;
   font-weight: bold;
+}
+
+.name {
+  font-size: 3.4rem;
+  font-weight: bold;
+}
+
+.desc {
+  font-size: 1.1rem;
 }
 
 .rightContainer {
   width: 70%;
   height: 100%;
-  background-color: #afb1c2;
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .rightContainer img {
-  margin-top: 7rem;
+  margin-top: 8rem;
+  margin-bottom: 5rem;
   width: 100%;
 
   image-rendering: auto;
@@ -42,4 +58,10 @@
 
   /* Safari seems to support, but seems deprecated and does the same thing as the others. */
   image-rendering: -webkit-optimize-contrast;
+
+  transition: all 0.25s ease-out;
+}
+
+.rightContainer img:hover {
+  width: 102%;
 }

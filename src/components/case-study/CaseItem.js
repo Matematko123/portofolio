@@ -2,17 +2,23 @@ import styles from './CaseItem.module.css';
 
 import PrimaryButton from '../reusable/PrimaryButton';
 
-import img from '../../images/matko-filmer/matko-filmer.png';
+import Tilt from 'react-parallax-tilt';
 
-function CaseItem({ name, desc }) {
+function CaseItem({ name, desc, img, color }) {
   return (
-    <li className={styles.caseItem}>
+    <Tilt
+      style={{ backgroundColor: color }}
+      className={styles.caseItem}
+      tiltMaxAngleX={1}
+      tiltMaxAngleY={1}
+      scale={1.01}
+    >
       <div className={styles.leftContainer}>
         <span className={styles.caseStudyText}>Case study</span>
 
         <div className={styles.bottom}>
           <span className={styles.name}>{name}</span>
-          <span>{desc}</span>
+          <span className={styles.desc}>{desc}</span>
           <PrimaryButton>View</PrimaryButton>
         </div>
       </div>
@@ -20,7 +26,7 @@ function CaseItem({ name, desc }) {
       <div className={styles.rightContainer}>
         <img src={img} alt="" />
       </div>
-    </li>
+    </Tilt>
   );
 }
 
