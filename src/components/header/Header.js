@@ -5,10 +5,12 @@ import logo from '../../images/logo.png';
 
 function Header() {
   return (
-    <header className={styles.headerContainer}>
+    <header className={styles.headerContainer} id="#top">
       <Container className={styles.header}>
         <div className={styles.logo}>
-          <img src={logo} alt="" srcset="" />
+          <a href="#top">
+            <img src={logo} alt="logo" />
+          </a>
         </div>
         <ul className={styles.links}>
           <li>
@@ -17,12 +19,12 @@ function Header() {
             </a>
           </li>
           <li>
-            <a className={styles.link} href="">
-              Testimonials
+            <a className={styles.link} href="#aboutme">
+              About me
             </a>
           </li>
           <li>
-            <a className={styles.link} href="">
+            <a className={styles.link} href="#contact">
               Contact
             </a>
           </li>

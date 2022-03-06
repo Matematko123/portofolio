@@ -50,3 +50,15 @@
   display: flex;
   gap: 2rem;
 }
+
+@media (max-width: 840px) {
+  .aboutWrapper {
+    height: 108vh;
+  }
+  .about {
+    margin-top: 14rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

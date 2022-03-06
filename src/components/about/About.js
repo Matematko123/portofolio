@@ -21,8 +21,12 @@ function About() {
             <span className={styles.hoverText}> engaging designs </span>
           </span>
           <div className={styles.buttons}>
-            <PrimaryButton>Contact me</PrimaryButton>
-            <PrimaryButton>About me</PrimaryButton>
+            <a href="#contact">
+              <PrimaryButton>Contact me</PrimaryButton>
+            </a>
+            <a href="#aboutme">
+              <PrimaryButton>About me</PrimaryButton>
+            </a>
           </div>
         </div>
       </Container>

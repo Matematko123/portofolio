@@ -4,7 +4,7 @@ import PrimaryButton from '../reusable/PrimaryButton';
 
 import Tilt from 'react-parallax-tilt';
 
-function CaseItem({ name, desc, img, color }) {
+function CaseItem({ name, desc, img, color, link }) {
   return (
     <Tilt
       style={{ backgroundColor: color }}
@@ -19,7 +19,9 @@ function CaseItem({ name, desc, img, color }) {
         <div className={styles.bottom}>
           <span className={styles.name}>{name}</span>
           <span className={styles.desc}>{desc}</span>
-          <PrimaryButton>View</PrimaryButton>
+          <a href={link} target="_blank">
+            <PrimaryButton>View</PrimaryButton>
+          </a>
         </div>
       </div>
 

@@ -56,7 +56,6 @@
   image-rendering: crisp-edges;
   image-rendering: pixelated;
 
-  /* Safari seems to support, but seems deprecated and does the same thing as the others. */
   image-rendering: -webkit-optimize-contrast;
 
   transition: all 0.25s ease-out;
@@ -64,4 +63,53 @@
 
 .rightContainer img:hover {
   width: 102%;
+}
+
+.bottom button {
+  background: #ffffff36;
+  transition: all 0.15s;
+}
+
+.bottom button:hover {
+  cursor: pointer;
+
+  box-shadow: none;
+  font-size: 1.3rem;
+}
+
+@media (max-width: 840px) {
+  .caseItem {
+    height: 100%;
+    min-height: 20vh;
+  }
+
+  .leftContainer {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding: 1.2rem;
+    padding-right: 1rem;
+    gap: 2rem;
+  }
+
+  .caseStudyText {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .name {
+    font-size: 2.2rem;
+    font-weight: bold;
+  }
+
+  .desc {
+    font-size: 1rem;
+  }
+
+  .bottom button {
+    font-size: 1rem;
+    background: #ffffff36;
+    transition: all 0.15s;
+  }
 }

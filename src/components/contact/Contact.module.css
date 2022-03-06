@@ -1,0 +1,98 @@
+.wrapper {
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+
+  background-color: #ebebeb;
+  color: #4a4a4a;
+}
+
+.titleText {
+  text-align: center;
+  font-size: 5rem;
+  position: relative;
+
+  transition: all 0.2s;
+}
+
+.titleText:hover {
+  font-size: 5.2rem;
+}
+
+.titleText::after {
+  position: absolute;
+  display: block;
+  bottom: -10%;
+  left: 45%;
+  width: 10%;
+  border-bottom: 5px solid #f25757;
+  content: '';
+}
+
+.form {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+
+.form label {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.form input {
+  background-color: #bebebeab;
+  border: none;
+  height: 3rem;
+}
+
+.form textarea {
+  height: 20rem;
+  background-color: #bebebeab;
+  border: none;
+}
+
+.form button {
+  margin-top: 1rem;
+}
+
+input,
+select,
+textarea {
+  transition: all 0.25s;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding-left: 1rem;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #000000ab;
+  background-color: #bebebeab;
+}
+
+textarea {
+  padding-top: 1rem;
+}
+
+input:hover,
+select:hover,
+textarea:hover {
+  border-color: transparent;
+  box-shadow: 0px 0px 0px 2px #0000005e;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  border: none;
+  border-color: transparent;
+  box-shadow: 0px 0px 0px 2px #0000005e;
+}
